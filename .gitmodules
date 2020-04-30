@@ -1,0 +1,40 @@
+[submodule "vim-colorpack"]
+	path = vim-colorpack
+	url = git://github.com/daviddavis/vim-colorpack.git
+	branch = master
+[submodule "vim-commentary"]
+	path = vim-commentary
+	url = git://github.com/tpope/vim-commentary.git
+	branch = master
+[submodule "vim-dispatch"]
+	path = vim-dispatch
+	url = git://github.com/tpope/vim-dispatch.git
+	branch = master
+[submodule "vim-endwise"]
+	path = vim-endwise
+	url = git://github.com/tpope/vim-endwise.git
+	branch = master
+[submodule "vim-fugitive"]
+	path = vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+	branch = master
+[submodule "vim-ragtag"]
+	path = vim-ragtag
+	url = git://github.com/tpope/vim-ragtag.git
+	branch = master
+[submodule "vim-repeat"]
+	path = vim-repeat
+	url = git://github.com/tpope/vim-repeat.git
+	branch = master
+[submodule "vim-surround"]
+	path = vim-surround
+	url = git://github.com/tpope/vim-surround.git
+	branch = master
+[submodule "vim-unimpaired"]
+	path = vim-unimpaired
+	url = git://github.com/tpope/vim-unimpaired.git
+	branch = master
+[submodule "ZoomWin"]
+	path = ZoomWin
+	url = git://github.com/vim-scripts/ZoomWin.git
+	branch = master
