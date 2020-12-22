@@ -1,110 +1,99 @@
+# start/ (automatically loaded)
 [submodule "vim-colorpack"]
-	path = vim-colorpack
+	path = start/vim-colorpack
 	url = git@github.com:daviddavis/vim-colorpack.git
 	branch = master
 [submodule "vim-commentary"]
-	path = vim-commentary
+	path = start/vim-commentary
 	url = git@github.com:tpope/vim-commentary.git
 	branch = master
 [submodule "vim-dispatch"]
-	path = vim-dispatch
+	path = start/vim-dispatch
 	url = git@github.com:tpope/vim-dispatch.git
 	branch = master
 [submodule "vim-endwise"]
-	path = vim-endwise
+	path = start/vim-endwise
 	url = git@github.com:tpope/vim-endwise.git
 	branch = master
 [submodule "vim-fugitive"]
-	path = vim-fugitive
+	path = start/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
 	branch = master
 [submodule "vim-ragtag"]
-	path = vim-ragtag
+	path = start/vim-ragtag
 	url = git@github.com:tpope/vim-ragtag.git
 	branch = master
 [submodule "vim-repeat"]
-	path = vim-repeat
+	path = start/vim-repeat
 	url = git@github.com:tpope/vim-repeat.git
 	branch = master
 [submodule "vim-surround"]
-	path = vim-surround
+	path = start/vim-surround
 	url = git@github.com:tpope/vim-surround.git
 	branch = master
 [submodule "vim-unimpaired"]
-	path = vim-unimpaired
+	path = start/vim-unimpaired
 	url = git@github.com:tpope/vim-unimpaired.git
 	branch = master
 [submodule "ZoomWin"]
-	path = ZoomWin
+	path = start/ZoomWin
 	url = git@github.com:vim-scripts/ZoomWin.git
 	branch = master
+
+# opt/ (load with :packadd packagename)
 [submodule "aspnetide.vim"]
-	path = aspnetide.vim
+	path = opt/aspnetide.vim
 	url = git@github.com:vim-scripts/aspnetide.vim.git
 	branch = master
-	update = none
 [submodule "nerdtree"]
-	path = nerdtree
+	path = opt/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
 	branch = master
-	update = none
 [submodule "syntastic"]
-	path = syntastic
+	path = opt/syntastic
 	url = git@github.com:scrooloose/syntastic.git
 	branch = master
-	update = none
 [submodule "taboo.vim"]
-	path = taboo.vim
+	path = opt/taboo.vim
 	url = git@github.com:gcmt/taboo.vim.git
 	branch = master
-	update = none
 [submodule "tagbar"]
-	path = tagbar
+	path = opt/tagbar
 	url = git@github.com:majutsushi/tagbar.git
 	branch = master
-	update = none
 [submodule "vbnet.vim"]
-	path = vbnet.vim
+	path = opt/vbnet.vim
 	url = git@github.com:vim-scripts/vbnet.vim.git
 	branch = master
-	update = none
 [submodule "vim-abolish"]
-	path = vim-abolish
+	path = opt/vim-abolish
 	url = git@github.com:tpope/vim-abolish.git
 	branch = master
-	update = none
 [submodule "vim-bookmarks"]
-	path = vim-bookmarks
+	path = opt/vim-bookmarks
 	url = git@github.com:MattesGroeger/vim-bookmarks.git
 	branch = master
-	update = none
 [submodule "vim-characterize"]
-	path = vim-characterize
+	path = opt/vim-characterize
 	url = git@github.com:tpope/vim-characterize.git
 	branch = master
-	update = none
 [submodule "vim-flagship"]
-	path = vim-flagship
+	path = opt/vim-flagship
 	url = git@github.com:tpope/vim-flagship.git
 	branch = master
-	update = none
 [submodule "vim-obsession"]
-	path = vim-obsession
+	path = opt/vim-obsession
 	url = git@github.com:tpope/vim-obsession.git
 	branch = master
-	update = none
 [submodule "vim-sleuth"]
-	path = vim-sleuth
+	path = opt/vim-sleuth
 	url = git@github.com:tpope/vim-sleuth.git
 	branch = master
-	update = none
 [submodule "vim-speeddating"]
-	path = vim-speeddating
+	path = opt/vim-speeddating
 	url = git@github.com:tpope/vim-speeddating.git
 	branch = master
-	update = none
 [submodule "vim-table-mode"]
-	path = vim-table-mode
+	path = opt/vim-table-mode
 	url = git@github.com:dhruvasagar/vim-table-mode.git
 	branch = master
-	update = none
