@@ -19,6 +19,10 @@
 	path = start/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
 	branch = master
+[submodule "vim-matchit"]
+	path = start/vim-matchit
+	url = git@github.com:adelarsq/vim-matchit.git
+	branch = master
 [submodule "vim-ragtag"]
 	path = start/vim-ragtag
 	url = git@github.com:tpope/vim-ragtag.git
