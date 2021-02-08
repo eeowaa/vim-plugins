@@ -1,4 +1,8 @@
 # start/ (automatically loaded)
+[submodule "org.vim"]
+	path = start/org.vim
+	url = git@github.com:axvr/org.vim.git
+	branch = master
 [submodule "vim-colorpack"]
 	path = start/vim-colorpack
 	url = git@github.com:daviddavis/vim-colorpack.git
@@ -100,4 +104,8 @@
 [submodule "vim-table-mode"]
 	path = opt/vim-table-mode
 	url = git@github.com:dhruvasagar/vim-table-mode.git
+	branch = master
+[submodule "start/org.vim"]
+	path = start/org.vim
+	url = git@github.com:axvr/org.vim.git
 	branch = master
