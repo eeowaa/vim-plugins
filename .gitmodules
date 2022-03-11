@@ -31,6 +31,10 @@
 	path = start/vim-helm
 	url = https://github.com/towolf/vim-helm.git
 	branch = master
+[submodule "vim-markdown"]
+	path = start/vim-markdown
+	url = git@github.com:preservim/vim-markdown.git
+	branch = master
 [submodule "vim-matchit"]
 	path = start/vim-matchit
 	url = git@github.com:adelarsq/vim-matchit.git
