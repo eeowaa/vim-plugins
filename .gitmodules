@@ -1,4 +1,8 @@
 # start/ (automatically loaded)
+[submodule "nerdtree"]
+	path = start/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+	branch = master
 [submodule "org.vim"]
 	path = start/org.vim
 	url = git@github.com:axvr/org.vim.git
@@ -56,10 +60,6 @@
 [submodule "aspnetide.vim"]
 	path = opt/aspnetide.vim
 	url = git@github.com:vim-scripts/aspnetide.vim.git
-	branch = master
-[submodule "nerdtree"]
-	path = opt/nerdtree
-	url = git@github.com:scrooloose/nerdtree.git
 	branch = master
 [submodule "syntastic"]
 	path = opt/syntastic
