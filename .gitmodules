@@ -39,6 +39,10 @@
 	path = start/vim-matchit
 	url = git@github.com:adelarsq/vim-matchit.git
 	branch = master
+[submodule "vim-mustache-handlebars"]
+	path = start/vim-mustache-handlebars
+	url = git@github.com:mustache/vim-mustache-handlebars.git
+	branch = master
 [submodule "vim-ragtag"]
 	path = start/vim-ragtag
 	url = git@github.com:tpope/vim-ragtag.git
