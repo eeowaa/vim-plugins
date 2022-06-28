@@ -27,6 +27,10 @@
 	path = start/vim-helm
 	url = https://github.com/towolf/vim-helm.git
 	branch = master
+[submodule "vim-lion"]
+	path = start/vim-lion
+	url = git@github.com:tommcdo/vim-lion.git
+	branch = master
 [submodule "vim-markdown"]
 	path = start/vim-markdown
 	url = git@github.com:preservim/vim-markdown.git
