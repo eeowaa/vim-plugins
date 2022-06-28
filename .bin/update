@@ -1,0 +1,18 @@
+#!/bin/sh
+## Update git submodules for vim packages
+cd "`git rev-parse --path-format=relative --show-toplevel`"
+git submodule update --init --remote
+cat <<EOF
+Hint: Run the following commands:
+
+    # Make sure nothing else has been changed
+    git status
+
+    # Update existing submodules in the index
+    git add -u
+
+    # Commit and push the updated submodules
+    git commit -m 'Update submodules'
+    git push
+
+EOF
