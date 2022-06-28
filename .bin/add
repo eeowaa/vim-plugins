@@ -1,0 +1,66 @@
+#!/bin/sh
+## Add a vim package as a submodule
+## Requires: ed
+
+echo -n 'Git remote URL (prefer SSH): '
+read url
+package=`echo "$url" | sed 's,[^/]*/\(.*\)\.git$,\1,'`
+
+echo -n 'Git branch name (prefer remote HEAD): '
+read branch
+
+echo -n 'Load package when Vim starts? [Y/n]: '
+read yn
+case $yn in
+[nN]*)
+    dir=opt ;;
+*)  dir=start ;;
+esac
+path=$dir/$package
+
+cd "`git rev-parse --path-format=relative --show-toplevel`"
+
+grep -xFe "[submodule \"$package\"]" .gitmodules >/dev/null && {
+    echo >&2 "ERROR: .gitmodules already contains entry for $package"
+    exit 1
+}
+
+# Update .gitmodules in an orderly fashion
+tmpfile=`mktemp`
+trap "rm -f '$tmpfile'" 0 1 2 3 15
+awk '
+BEGIN {
+    header = "[submodule \"'$package'\"]"
+    entry = header "\n\tpath = '$path'\n\turl = '$url'\n\tbranch = '$branch'"
+}
+# Insert entry in sorted order within appropriate section
+search && /^\[submodule / && header < $0 {
+    print entry
+    search = 0
+}
+# Start of appropriate section (matching comment line)
+$1 == "#" && $2 == "'$dir'/" {
+    search = 1
+}
+# End of section (blank line)
+NF == 0 {
+    search = 0
+}
+# Print all lines
+{
+    print
+}' .gitmodules >"$tmpfile"
+mv "$tmpfile" .gitmodules
+
+git submodule add --name "$package" -b "$branch" -- "$url" "$path"
+cat <<EOF
+Hint: Run the following commands:
+
+    # Make sure nothing else is staged
+    git status
+
+    # Commit and push the changes for the new vim package
+    git commit -m 'Add $package'
+    git push
+
+EOF
