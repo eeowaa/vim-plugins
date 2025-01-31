@@ -63,6 +63,10 @@
 	path = start/vim-terraform
 	url = git@github.com:hashivim/vim-terraform.git
 	branch = master
+[submodule "vim-toml"]
+	path = start/vim-toml
+	url = git@github.com:cespare/vim-toml.git
+	branch = main
 [submodule "vim-unimpaired"]
 	path = start/vim-unimpaired
 	url = git@github.com:tpope/vim-unimpaired.git
