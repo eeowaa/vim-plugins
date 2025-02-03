@@ -27,3 +27,48 @@ accepts command-line arguments):
 If you have `direnv` installed, the `.bin` directory will automatically be
 added to your `$PATH` when the current working directory is within this git
 repository, so you can directly execute the `add` or `update` commands.
+
+## Package Listing
+
+### Automatically loaded packages in `start/`
+
+| Package                 | Description                                       |
+|-------------------------|---------------------------------------------------|
+| ZoomWin                 | Toggle fullscreen for the current window          |
+| org.vim                 | Edit org-mode files                               |
+| vim-colorpack           | Select from modern colorschemes                   |
+| vim-commentary          | Toggle code comments                              |
+| vim-dispatch            | Run programs asynchronously in your terminal      |
+| vim-endwise             | Automatically end code blocks                     |
+| vim-fugitive            | Interface with Git                                |
+| vim-helm                | Edit Helm templates                               |
+| vim-jq                  | Edit jq scripts                                   |
+| vim-lion                | Align text by some character                      |
+| vim-markdown            | Edit markdown documentation                       |
+| vim-matchit             | Jump between more begin/end tokens with `%`       |
+| vim-mustache-handlebars | Edit Mustache and Handlebars templates            |
+| vim-ragtag              | Conveniently edit `<tag>` structures in code      |
+| vim-repeat              | Repeat more commands with `.`                     |
+| vim-surround            | Work with text objects defined by surroundings    |
+| vim-terraform           | Edit and run Terraform                            |
+| vim-toml                | Edit TOML config files                            |
+| vim-unimpaired          | Perform clunky/common operations with ease        |
+
+### Manually loaded packages in `opt/`
+
+| Package                 | Description                                       |
+|-------------------------|---------------------------------------------------|
+| aspnetide.vim           | Edit and run ASP.NET code                         |
+| nerdtree                | Explore a filesystem tree in a sidebar            |
+| syntastic               | Run code linters                                  |
+| taboo.vim               | Easily format and rename tabs                     |
+| tagbar                  | Navigate ctags in a sidebar                       |
+| vbnet.vim               | Edit VB.NET code                                  |
+| vim-abolish             | Work with variations in casing and congugation    |
+| vim-bookmarks           | Bookmark and annotate lines of files              |
+| vim-characterize        | View extended character representations with `ga` |
+| vim-flagship            | Display a global status/tag line                  |
+| vim-obsession           | Automatically save and load sessions              |
+| vim-sleuth              | Automatically set `shiftwidth` and `expandtab`    |
+| vim-speeddating         | Conveniently work with timestamps                 |
+| vim-table-mode          | Insert and edit tables                            |
